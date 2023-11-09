@@ -1,0 +1,11 @@
+set(HICMAPP_TESTFILES test_main.cpp)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/primitives)
+enable_testing()
+
+add_executable(hicmapp-tests ${HICMAPP_TESTFILES})
+if (HICMAPP_USE_MPI)
+    target_link_libraries(hicmapp-tests Catch2::Catch2WithMain ${PROJECT_NAME} MPI::MPI_CXX)
+else ()
+    target_link_libraries(hicmapp-tests Catch2::Catch2WithMain ${PROJECT_NAME})
+endif ()
+catch_discover_tests(hicmapp-tests)

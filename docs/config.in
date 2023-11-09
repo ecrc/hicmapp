@@ -1,0 +1,19 @@
+PROJECT_NAME = "HICMAPP"
+BUILTIN_STL_SUPPORT = YES
+EXTRACT_ALL = YES
+INPUT                  = "@CMAKE_CURRENT_SOURCE_DIR@/index.md" \
+                         "@CMAKE_CURRENT_SOURCE_DIR@/../src" \
+                         "@CMAKE_CURRENT_SOURCE_DIR@/../include" \
+                         "@CMAKE_CURRENT_SOURCE_DIR@/../tests" \
+                         "@CMAKE_CURRENT_SOURCE_DIR@/../examples"
+
+
+OUTPUT_DIRECTORY =       "@CMAKE_CURRENT_SOURCE_DIR@/"
+RECURSIVE = YES
+HIDE_UNDOC_RELATIONS = NO
+HAVE_DOT = YES
+UML_LOOK = YES
+CALL_GRAPH = YES
+CALLER_GRAPH = YES
+MARKDOWN_SUPPORT=YES
+USE_MDFILE_AS_MAINPAGE = index.md
