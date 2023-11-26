@@ -1,0 +1,14 @@
+set(SOURCES
+        ${CMAKE_CURRENT_SOURCE_DIR}/generate-codelet.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/gemm-codelet.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/GenerateCompressedDataCodelet.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/syrk-codelet.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/potrf-codelet.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/trsm-codelet.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/generate-dgytlr-diag-codelet.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/generate-dgytlr-codelet.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/uncompress-codelet.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/lacpy-codelet.cpp
+        ${SOURCES}
+        PARENT_SCOPE
+        )

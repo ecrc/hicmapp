@@ -1,0 +1,7 @@
+[submodule "libs/stars-h"]
+	path = libs/stars-h
+	url = https://github.com/ecrc/stars-h.git
+[submodule "libs/hcorepp"]
+	path = libs/hcorepp
+	url = https://github.com/ecrc/hcorepp.git
+	branch = main
